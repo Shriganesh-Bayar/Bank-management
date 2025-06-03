@@ -26,7 +26,7 @@ string encrypt(string a) {
     // used one method of encryption
     for(int i = 0; i < a.size(); i++) {
         int j = i % b.size();
-        char c = ((a[i] - 'a') + (b[i] - 'a')) % 26 + 'a';
+        char c = ((a[i] - 'a') + (b[j] - 'a')) % 26 + 'a';
         a[i] = c;
     }
     return a;
